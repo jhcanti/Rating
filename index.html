@@ -8,37 +8,49 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
-
   <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+  <main>
+    <div class="let-rating">
+      <img class="icon" src="images/icon-star.svg" alt="icono con forma de estrella">
+      <p class="title"> How did we do?</p>
+      <p class="message">Please let us know how we did with your support request.
+        All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="numbers">
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </div>
+      <button class="button-submit">Submit</button>
+    </div>
+  </main>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <section class="thankyou hidden">
+    <img src="images/illustration-thank-you.svg" alt="icono">
+    <p class="selected-option">You selected <span></span> out of 5</p>
+    <p class="title">Thank you!</p>
+    <p class="message center">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+  </section>
   <!-- Thank you state end -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Javier Cantizani</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Javier Cantizani</a>.
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
